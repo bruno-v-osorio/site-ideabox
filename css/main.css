@@ -1,0 +1,247 @@
+/* asterisco afeta todos os elementos do html */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p, label {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+
+    .ib-topbar {
+        width: 100%;
+        height: 70px;
+        display: block;
+        background: #2D2D2D;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+    }
+
+    .ib-logo{
+        width: 185px;
+        height: 35px;
+        float: left;
+        margin-left: 128px;
+        margin-top: 18px;
+        position: relative;
+    }
+
+    .ib-navbar {
+        display: table;
+        float: right;
+        height: 70px;
+        margin-right: 128px;
+        
+    }
+
+    .ib-navbar a {
+        font-family: 'Open Sans';
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin: 26px 20px 0 20px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .ib-navbar a:hover {
+        color:#2570FF;
+    }
+
+    .ib-navbar-cta {
+        width: 285px;
+        height: 40px;
+        background-color: #2570FF;
+        border-radius: 8px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .ib-navbar-cta:hover {
+        background-color: yellow;
+        color: #1d1d1d;
+    }
+
+    /* Home */
+
+    .ib-home-presentation {
+        background-image: url(../images/bg-ideabox.png);
+        background-repeat: no-repeat;
+        background-position: 50% bottom;
+        position: relative;
+        background-size: 130% auto;
+    }
+
+    .ib-home-presentation h1 {
+        width: 733px;
+        height: 330px;
+        margin-top: 156px;
+        margin-left: 128px;
+        text-align: left;
+        color: #fff
+    }
+
+    .ib-home-presentation p {
+        height: 21px;
+        margin-left: 128px;
+        text-align: left;
+        color: #fff
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+
+
+    /* UTILITÁRIAS */
+
+    .ib-full-height {
+        height: 100vh;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* Extra large devices (large desktops, 1366px and up) */
+@media (min-width: 1366px) {
+
+}
+
+/* Classes Utilitárias */
+
+.ib-mar-15 {
+    margin: 15px;
+}
+
+.ib-mar-top-15 {
+    margin-top: 15px;
+}
+
+.ib-mar-right-15 {
+    margin-right: 15px;
+}
+
+.ib-mar-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.ib-mar-left-15 {
+    margin-left: 15px;
+}
+
+.ib-pad-15 {
+    padding: 15px;
+}
+
+.ib-pad-top-15 {
+    padding-top: 15px;
+}
+
+.ib-pad-right-15 {
+    padding-right: 15px;
+}
+
+.ib-pad-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.ib-pad-left-15 {
+    padding-left: 15px;
+}
+
+.ib-mar-30 {
+    margin: 30px;
+}
+
+.ib-mar-top-30 {
+    margin-top: 30px;
+}
+
+.ib-mar-right-30 {
+    margin-right: 30px;
+}
+
+.ib-mar-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.ib-mar-left-30 {
+    margin-left: 30px;
+}
+
+.ib-pad-30 {
+    padding: 30px;
+}
+
+.ib-pad-top-30 {
+    padding-top: 30px;
+}
+
+.ib-pad-right-30 {
+    padding-right: 30px;
+}
+
+.ib-pad-bottom-30 {
+    padding-bottom: 30px;
+}
+
+.ib-pad-left-30 {
+    padding-left: 30px;
+}
+
+.ib-first-section {
+    height: 100vh;
+
+}
+
+.ib-no-padding {
+    padding: 0!important;
+}
+
+.ib-text-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.ib-text-light {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.ib-text-large {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+}
+
+.ib-text-xlarge {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 72px;
+}
