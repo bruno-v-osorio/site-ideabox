@@ -8,11 +8,13 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-p, label {
+p, label, h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
+
+/* Topbar */
 
     .ib-topbar {
         width: 100%;
@@ -21,7 +23,7 @@ p, label {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 900;
+        z-index: 1000;
     }
 
     .ib-logo{
@@ -34,11 +36,9 @@ p, label {
     }
 
     .ib-navbar {
-        display: table;
         float: right;
         height: 70px;
-        margin-right: 128px;
-        
+        display: none;   
     }
 
     .ib-navbar a {
@@ -68,75 +68,382 @@ p, label {
         color: #fff;
     }
 
-    .ib-navbar-cta:hover {
-        background-color: yellow;
-        color: #1d1d1d;
-    }
 
-    /* Home */
+/* Home */
 
-    .ib-home-presentation {
+    #ib-home-presentation {
+        width: 100vw;
+        height: 100vh;
         background-image: url(../images/bg-ideabox.png);
         background-repeat: no-repeat;
-        background-position: 50% bottom;
+        background-position: center;
         position: relative;
     }
 
+    .ib-home-overlay {
+        width: 100%;
+        height: 100vh;
+        position:absolute;
+        left:0;
+        background: rgba(0,0,0,.45);
+    }
+
     .ib-home-presentation h1 {
-        width: 733px;
-        height: 330px;
-        margin-top: 156px;
-        margin-left: 128px;
-        text-align: left;
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 135px;
+        text-align: center;
         color: #fff
     }
 
     .ib-home-presentation p {
-        height: 21px;
-        margin-left: 128px;
-        text-align: left;
-        color: #fff
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+        padding-top: 15px; 
     }
 
-    /* Quem Somos */
-
-    .ib-section-quemsomos {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .ib-logo-tagline {
-        width: 252px;
-        height: 60px;
-        display: block;
+    .ib-home-cta {
+        width: 222px;
+        height: 54px;
+        margin-top: 100px;
+        border-radius: 100px;
+        border: none;
+        background-color: #2570FF;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        display: table;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 110px;
+    }
+
+/* Quem Somos */
+
+    .ib-logo-tagline {
+        width: 70%;
+        padding-top: 45px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .ib-img-quem-somos {
-        width: 516px;
-        height: 277px;
-        margin-top: 240px;
-    }
-
-    /* Soluções */
-
-    .ib-section-solucoes {
-        width: 100%;
-        height: 100vh;
-    }
-
-    /* Carrossel */
-
-    .jl-portfolio-item-thumb img {
-        width: 730px;
-        height: 390px;
-        display: block;
+        width: 85%;
+        padding-top: 30px;
+        display: table;
         margin-left: auto;
         margin-right: auto;
     }
 
+    .ib-quem-somos p {
+        padding-top: 15px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .ib-quem-somos p:last-child {
+        margin-bottom: 30px;
+    }
+
+/* Soluções */
+
+    .ib-section-solucoes {
+        height: 100%;
+        background-color: #EEE;
+    }
+
+    .ib-section-solucoes h2 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+
+/* Soluções - Carrossel */
+
+    .ib-solucoes-thumb img {
+        width: 90%;
+        padding-top: 15px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-solucoes-thumb h3 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .ib-solucoes-thumb p {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+/* Sispro */
+
+    .ib-section-sispro {
+        height: 90vh;
+    }
+
+    .ib-section-sispro p {
+        padding-top: 60px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .ib-section-sispro img {
+        width: 90%;
+        padding-top: 90px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Números */
+
+    .ib-section-numeros {
+        height: 120vh;
+        background-color: #2570FF;
+    }
+
+    .ib-section-numeros h2 {
+        font-family: 'Open sans', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        text-align: center;
+        color: #fff;
+        padding-top: 30px;
+    }
+
+    .ib-numeros-thumb {
+        width: 90%;
+        height: 96px;
+        border-radius: 8px;
+        border: none;
+        background-color: #3B7EFE;
+        margin-top: 30px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-numeros-thumb img {
+        width: 43px;
+        height: 23px;
+        color: #fff;
+        display: table;
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-numeros-thumb h1 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .ib-numeros-thumb p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+    }
+
+/* Review */
+
+    .ib-section-review {
+    height: 290vh;
+    background-color: #EEE;
+    }
+
+    .ib-section-review h2 {
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-review-thumb {
+        width: 256px;
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 8px;
+        border: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ib-review-estrelas {
+        display: table;
+        padding-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-review-thumb p {
+        font-size: 16px;
+        text-align: center;
+        padding: 15px 7px 0 7px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ib-review-foto {
+        float: left;
+        padding-left: 15px;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .ib-review-thumb h1 {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        padding-top: 30px;
+        margin-left: 70px;
+    }
+
+    .ib-review-thumb h2 {
+        font-size: 10px;
+        font-weight: 500;
+        text-align: left;
+        padding-top: 0;
+        margin-left: 70px;
+    }
+
+/* Cases */
+
+    .ib-section-cases {
+        height: 85vh;
+        background-color: #EEE;
+    }
+
+    .ib-section-cases h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .ib-section-cases img {
+        padding-top: 45px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Contato */
+
+    .ib-section-contato {
+        height: 90vh;
+        background-color: #2570FF;
+    }
+
+    .ib-section-contato h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .ib-form {
+        width: 85%;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-section-contato label {
+        display: block;
+        margin-top: 15px;
+        font-family: 'Open sans', sans-serif;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .ib-section-contato input {
+        width: 100%;
+        height: 30px;
+        margin-top: 7px;
+        border-radius: 8px;
+        border: none;
+        background-color: #fff;
+    }
+    
+    #ib-contato-cta {
+        width: 222px;
+        height: 54px;
+        margin-top: 45px;
+        border-radius: 100px;
+        border: none;
+        background-color: #fff;
+        color: #1d1d1d;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Footer */
+
+    .ib-section-footer {
+        height: 45vh;
+        background-color: #2d2d2d;
+    }
+    
+    .ib-footer-logo {
+        padding-top: 30px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-section-footer h2 {
+        padding-top: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+    }
+
+    .ib-footer-social-media {
+        display: table;
+        padding-top: 15px;
+        margin: 0 auto 0 auto;
+        
+    }
+
+    .ib-footer-logo-facebook {
+        width: 24px;
+        height: 24px;
+        margin-right: 15px;
+    }
+
+    .ib-footer-logo-instagram {
+        width: 24px;
+        height: 24px;
+        margin-left: 15px;
+    }
 
 }
 
@@ -164,6 +471,13 @@ p, label {
         position: relative;
     }
 
+    .ib-navbar {
+        display: table;
+        float: right;
+        height: 70px;
+        padding-right: 64px; 
+    }
+
     .ib-home-presentation {
         background-image: url(../images/bg-ideabox.png);
         background-repeat: no-repeat;
@@ -172,10 +486,30 @@ p, label {
         background-size: 130% auto;
     }
 
-    /* UTILITÁRIAS */
+    .ib-img-quem-somos {
+        width: 516px;
+        height: 277px;
+        margin-top: 240px;
+    }
 
-    .ib-full-height {
-        height: 100vh;
+    .ib-home-presentation h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 180px;
+        text-align: left;
+        color: #fff
+    }
+
+    .ib-home-presentation p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 15px;
+        text-align: left;
+        color: #fff
+    }
+
+    .ib-home-cta {
+        display: none;
     }
 
 }
@@ -183,11 +517,28 @@ p, label {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+    .ib-topbar {
+        width: 100%;
+        height: 70px;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 
 }
 
 /* Extra large devices (large desktops, 1366px and up) */
 @media (min-width: 1366px) {
+
+    .ib-topbar {
+        width: 100%;
+        height: 70px;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 
 }
 
@@ -297,8 +648,24 @@ p, label {
     padding-left: 30px;
 }
 
-.ib-first-section {
-    height: 100vh;
+.ib-pad-60 {
+    padding: 60px;
+}
+
+.ib-pad-top-60 {
+    padding-top: 60px;
+}
+
+.ib-pad-right-60 {
+    padding-right: 60px;
+}
+
+.ib-pad-bottom-60 {
+    padding-bottom: 60px;
+}
+
+.ib-pad-left-60 {
+    padding-left: 60px;
 }
 
 .ib-no-padding {
@@ -313,6 +680,11 @@ p, label {
 .ib-text-light {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+}
+
+.ib-text-medium {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
 }
 
 .ib-text-large {
