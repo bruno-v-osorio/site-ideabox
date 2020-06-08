@@ -12,36 +12,58 @@
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
     <title>Ideabox - Acelerando Ideias Inovadoras</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+
+
 </head>
 
 <body>
+
+    <div class="ib-menu-overlay ib-toggle-menu"></div>
 
 <!--      TOPBAR      -->
 
     <header class="ib-topbar ib-bg-dark">
         <div class="ib-logo">
-            <a href="#"><img src="images/logo-ideabox.svg" alt="Ideabox - Acelerando Ideias Inovadoras"/></a>
+            <a href="#ib-home-presentation"><img src="images/logo-ideabox.svg" alt="Ideabox - Acelerando Ideias Inovadoras"/></a>
         </div>
 
         <nav class="ib-navbar">
-            <a href="#">Quem Somos</a>
-            <a href="#">Soluções</a>
-            <a href="#">Cases</a>
-            <button class="ib-navbar-cta" type="button">SOLICITE UMA DEMONSTRAÇÃO</button>
+            <a href="#ib-quem-somos">Quem Somos</a>
+            <a href="#ib-section-solucoes">Soluções</a>
+            <a href="#ib-section-cases">Cases</a>
+            <a href="#ib-section-contato"><button class="ib-navbar-cta" type="button">SOLICITE UMA DEMONSTRAÇÃO</button></a>
         </nav>
     </header>
+
+
+<!--      toogle navbar      -->
+    <button class="ib-btn-menu-mob ib-toggle-menu">
+        <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <nav class="ib-menu-mob ib-menu-is-closed">
+        <a href="#ib-home-presentation">Home</a>
+        <a href="#ib-quem-somos">Quem Somos</a>
+        <a href="#ib-section-solucoes">Soluções</a>
+        <a href="#ib-section-cases">Cases</a>
+    </nav>
 
 <!--     HOME      -->
     <section class="ib-home-presentation" id="ib-home-presentation">
         <div class="ib-home-overlay">
             <h1>Soluções inovadoras em qualquer tipo de organização.</h1>
             <p>Uma nova maneira de acelerar a inovação na <br> sua empresa!</p>
-            <button class="ib-home-cta" type="button">SOLICITE UMA <br> DEMONSTRAÇÃO</button>
+            <a href="#ib-section-contato">
+                <button class="ib-home-cta" type="button">SOLICITE UMA <br> DEMONSTRAÇÃO</button>
+            </a>
         </div>
     </section>
 
 <!--      QUEM SOMOS      -->
-    <section class="ib-quem-somos">
+    <section class="ib-quem-somos" id="ib-quem-somos">
         <img src="images/logo-tagline.svg" class="ib-logo-tagline" alt="Ideabox - Acelerando Ideias Inovadoras"/>
         <img src="images/quem-somos.png" class="ib-img-quem-somos" alt="Ideabox - Quem Somos"/>
         <p>Uma plataforma colaborativa que conecta ideias e pessoas, que utiliza gamificação para facilitar e acelerar a inovação dentro de organizações: esse é o <b>ideabox</b>.</p>  
@@ -52,14 +74,36 @@
 
 <!--      SOLUÇÕES      -->
 
-    <section class="ib-section-solucoes">
+    <section class="ib-section-solucoes" id="ib-section-solucoes">
         <h2>Soluções</h2>
 
 <!--      SOLUÇÕES - Carrossel      -->
-    <div class="ib-solucoes-thumb">
-        <img src="images/thumb-01.png" alt="Ideabox - Lance Desafios" title="Ideabox - Lance Desafios"/>
-        <h3>Lance Desafios</h3>
-        <p>Lance desafios de todos os níveis para que os colaboradores e clientes possam compartilhar ideias criativas e inovadoras para transformar sua empresa.</p>
+    <div class="ib-solucoes-carrousel">
+        <div class="ib-solucoes-thumb">
+            <img src="images/thumb-01.png" alt="Ideabox - Lance Desafios" title="Ideabox - Lance Desafios"/>
+            <h3>Lance Desafios</h3>
+            <p>Lance desafios de todos os níveis para que os colaboradores e clientes possam compartilhar ideias criativas e inovadoras para transformar sua empresa.</p>
+        </div>
+
+        <div class="ib-solucoes-thumb">
+            <img src="images/thumb-02.png" alt="Ideabox - Lance Desafios" title="Ideabox - Lance Desafios"/>
+            <h3>Priorize Ideias</h3>
+            <p>De forma simples e ágil, analise e selecione as ideias mais relevantes para o seu projeto</p>
+        </div>
+
+        <div class="ib-solucoes-thumb">
+            <img src="images/thumb-03.png" alt="Ideabox - Lance Desafios" title="Ideabox - Lance Desafios"/>
+            <h3>Fomente a Cultura da Inovação</h3>
+            <p>Transforme seus colaboradores em agentes da inovação. Com um sistema de gamificação, recompensas e rankeamento, é possível fazer com que todos os participantes do programa de inovação sejam reconhecidos por seu desempenho.</p>
+        </div>
+
+        <div class="ib-solucoes-thumb">
+            <img src="images/thumb-04.png" alt="Ideabox - Lance Desafios" title="Ideabox - Lance Desafios"/>
+            <h3>Indicadores de Inovação</h3>
+            <p>Tome decisões e saiba como está o nível de criatividade e inovação de sua empresa a partir de nossos KPIs de inovação</p>
+        </div>
+
+
     </div>
 
 <!--      SISPRO      -->
@@ -110,42 +154,55 @@
     <section class="ib-section-review">
         <h2>Acelerando a inovação dentro de organizações:</h2>
 
-        <div class="ib-review-thumb">
-            <img src="images/estrelas.svg" id="ib-review-estrelas"/>
-            <p>O Ideabox é uma ferramenta gameficada incrível para apoiar projetos de inovação aberta, sobretudo na fase de ideação! É personalizável e gera engajamento por meio da gameficação, permitindo a criação e a gestão de campanhas de recompensas.</p>
-            <img src="images/marcos-machado.png" id="ib-review-foto"/>
-            <h1>Marcos Machado</h1>
-            <h2>Diretor de Inovação da ULBRA</h2>
+        <div class="ib-review-carrousel">
+
+            <div class="ib-review-thumb">
+                <img src="images/estrelas.svg" id="ib-review-estrelas"/>
+                <p>Com o Ideabox conseguimos facilitar e ampliar o processo de construção de soluções para nossa empresa. Dando voz aos colaboradores e parceiros tornamos o processo de ideação colaborativo e dinâmico, conseguindo um engajamento do time que não teríamos sem o uso da ferramenta.</p>
+                <img src="images/vicente-engel.png" id="ib-review-foto"/>
+                <h1>Vicente Engel</h1>
+                <h2>Diretor Executivo da Muck</h2>
+            </div>
+
+            <div class="ib-review-thumb">
+                <img src="images/estrelas.svg" id="ib-review-estrelas"/>
+                <p>O Ideabox é uma ferramenta gameficada incrível para apoiar projetos de inovação aberta, sobretudo na fase de ideação! É personalizável e gera engajamento por meio da gameficação, permitindo a criação e a gestão de campanhas de recompensas.</p>
+                <img src="images/marcio-machado.png" id="ib-review-foto"/>
+                <h1>Marcio Machado</h1>
+                <h2>Diretor de Inovação da ULBRA</h2>
+            </div>
+
+            <div class="ib-review-thumb">
+                <img src="images/estrelas.svg" id="ib-review-estrelas"/>
+                <p>O Ideabox é uma ferramenta gameficada incrível para apoiar projetos de inovação aberta, sobretudo na fase de ideação! É personalizável e gera engajamento por meio da gameficação, permitindo a criação e a gestão de campanhas de recompensas.</p>
+                <img src="images/bruno-bittencourt.png" id="ib-review-foto"/>
+                <h1>Bruno Bittencourt </h1>
+                <h2>Consultor de Inovação e Liderança</h2>
+            </div>
+
+            <div class="ib-review-thumb">
+                <img src="images/estrelas.svg" id="ib-review-estrelas"/>
+                <p>O Ideabox é uma ferramenta gameficada incrível para apoiar projetos de inovação aberta, sobretudo na fase de ideação! É personalizável e gera engajamento por meio da gameficação, permitindo a criação e a gestão de campanhas de recompensas.</p>
+                <img src="images/gilberto-bueno.png" id="ib-review-foto"/>
+                <h1>Gilberto Bueno</h1>
+                <h2>Supervisor de desenvolvimento CTD</h2>
+            </div>
+
+            <div class="ib-review-thumb">
+                <img src="images/estrelas.svg" id="ib-review-estrelas"/>
+                <p>O Ideabox é uma ferramenta que colabora com o processo de inovação no que tange captação de ideias dos colaboradores a partir dos desafios que são propostos pela empresa. Ela tem uma interface amigável “clean” e o sistema de ranqueamento com os pontos acumulados  estimulam os colegas a contribuírem com novas ideias.</p>
+                <img src="images/marcelo-saldanha.png" id="ib-review-foto"/>
+                <h1>Marcelo Saldanha</h1>
+                <h2>Sispro ERP Cloud – Gerente</h2>
+            </div>
+
         </div>
 
-        <div class="ib-review-thumb">
-            <img src="images/estrelas.svg" id="ib-review-estrelas"/>
-            <p>O Ideabox é uma ferramenta gameficada incrível para apoiar projetos de inovação aberta, sobretudo na fase de ideação! É personalizável e gera engajamento por meio da gameficação, permitindo a criação e a gestão de campanhas de recompensas.</p>
-            <img src="images/marcos-machado.png" id="ib-review-foto"/>
-            <h1>Bruno Bittencourt </h1>
-            <h2>Consultor de Inovação e Liderança</h2>
-        </div>
-
-        <div class="ib-review-thumb">
-            <img src="images/estrelas.svg" id="ib-review-estrelas"/>
-            <p>O Ideabox é uma ferramenta gameficada incrível para apoiar projetos de inovação aberta, sobretudo na fase de ideação! É personalizável e gera engajamento por meio da gameficação, permitindo a criação e a gestão de campanhas de recompensas.</p>
-            <img src="images/marcos-machado.png" id="ib-review-foto"/>
-            <h1>Gilberto Bueno</h1>
-            <h2>Supervisor de desenvolvimento CTD</h2>
-        </div>
-
-        <div class="ib-review-thumb">
-            <img src="images/estrelas.svg" id="ib-review-estrelas"/>
-            <p>O Ideabox é uma ferramenta que colabora com o processo de inovação no que tange captação de ideias dos colaboradores a partir dos desafios que são propostos pela empresa. Ela tem uma interface amigável “clean” e o sistema de ranqueamento com os pontos acumulados  estimulam os colegas a contribuírem com novas ideias.</p>
-            <img src="images/marcos-machado.png" id="ib-review-foto"/>
-            <h1>Marcelo Saldanha</h1>
-            <h2>Sispro ERP Cloud – Gerente</h2>
-        </div>
     </section>
 
 <!--      CASES      -->
 
-    <section class="ib-section-cases">
+    <section class="ib-section-cases" id="ib-section-cases">
         <h3>Cases</h3>
         <img src="images/logo-ctd.png" alt="Logo CTD">
         <img src="images/logo-muck.png" alt="Logo Imobiliária Muck">
@@ -154,7 +211,7 @@
 
 <!--      CONTATO      -->
 
-    <section class="ib-section-contato">
+    <section class="ib-section-contato" id="ib-section-contato">
         <h3>Quer saber mais?</h3>
         <form id="ib-form" method="post" action="home.php#empresa" name="email-form" data-name="Email Form" class="ib-form">
 
@@ -184,14 +241,75 @@
             <h2>Fone: (51) 9 9915.4300</h2>
             <h2>E-mail: ideabox@sispro.com.br</h2>
         <div class="ib-footer-social-media">
-            <img src="images/logo-facebook.png" class="ib-footer-logo-facebook"/>
-            <img src="images/logo-instagram.png" class="ib-footer-logo-instagram"/>
+            <a href="#"><img src="images/logo-facebook.png" class="ib-footer-logo-facebook"></a>
+            <a href="https://www.instagram.com/ideaboxoficial/"><img src="images/logo-instagram.png" class="ib-footer-logo-instagram"></a>
         </div>
     </section>
 
 
 <!--      SCRIPTS      -->
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+
+
+<!--      SCRIPTS / carrossel soluções      -->
+    <script type="text/javascript">
+                $('.ib-solucoes-carrousel').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            },
+            {
+            breakpoint: 320,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
+        });
+    </script>
+
+<!--      SCRIPTS / carrossel reviews      -->
+    <script type="text/javascript">
+        $('.ib-review-carrousel').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    responsive: [
+    {
+    breakpoint: 768,
+    settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+    }
+    },
+    {
+    breakpoint: 320,
+    settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+    }
+    }
+    ]
+    });
+    </script>
 
 </body>
 </html>

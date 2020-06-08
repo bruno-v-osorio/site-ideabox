@@ -14,6 +14,18 @@ p, label, h1, h2, h3 {
 
 @media screen and (min-width: 320px) {
 
+    .ib-menu-overlay {
+        width: 100%;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        z-index: 1100;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 87, 255, 0.95);
+    }
+
+
 /* Topbar */
 
     .ib-topbar {
@@ -66,14 +78,55 @@ p, label, h1, h2, h3 {
         font-size: 16px;
         font-weight: 700;
         color: #fff;
+        cursor: pointer;
     }
 
+    .ib-btn-menu-mob ion-icon {
+        width: 36px;
+        height: 24px;
+        display: block;
+        color: #fff;
+        position: fixed;
+        right: 30px;
+        top: 24px;
+        z-index: 1250;
+        cursor: pointer;
+    }
+
+    .ib-menu-mob {
+        width: 220px;
+        height: 100vh;
+        display: block;
+        background-color: #2D2D2D;
+        position: fixed;
+        top: 0;
+        padding: 100px 30px 30px;
+        z-index: 1200;
+    }
+
+    .ib-menu-is-open {
+        right: 0;
+    }
+
+    .ib-menu-is-closed {
+        right: -240px;
+    }
+
+    .ib-menu-mob a {
+        width: 100%;
+        height: 60px;
+        display: block;
+        line-height: 60px;
+        color: #fff;
+        font-family: 'Open sans', sans-serif;
+        text-decoration: none;
+    }
 
 /* Home */
 
     #ib-home-presentation {
         width: 100vw;
-        height: 100vh;
+        height: 95vh;
         background-image: url(../images/bg-ideabox.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -82,7 +135,7 @@ p, label, h1, h2, h3 {
 
     .ib-home-overlay {
         width: 100%;
-        height: 100vh;
+        height: 95vh;
         position:absolute;
         left:0;
         background: rgba(0,0,0,.45);
@@ -104,10 +157,14 @@ p, label, h1, h2, h3 {
         padding-top: 15px; 
     }
 
+    .ib-home-presentation a {
+        text-decoration: none;
+    }
+
     .ib-home-cta {
         width: 222px;
         height: 54px;
-        margin-top: 100px;
+        margin-top: 70px;
         border-radius: 100px;
         border: none;
         background-color: #2570FF;
@@ -115,9 +172,11 @@ p, label, h1, h2, h3 {
         font-size: 16px;
         font-weight: 700;
         line-height: 20px;
+        text-decoration: none;
         display: table;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
     }
 
 /* Quem Somos */
@@ -268,7 +327,7 @@ p, label, h1, h2, h3 {
 /* Review */
 
     .ib-section-review {
-    height: 290vh;
+    height: 95vh;
     background-color: #EEE;
     }
 
@@ -280,20 +339,21 @@ p, label, h1, h2, h3 {
         margin-right: auto;
     }
 
+    /*
     .ib-review-thumb {
-        width: 256px;
+        width: 230px;
+        height: 420px;
         margin-top: 30px;
         background-color: #fff;
         border-radius: 8px;
         border: none;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
+        padding-bottom: 15px;
     }
+    */
 
     #ib-review-estrelas {
         display: table;
-        padding-top: 15px;
+        padding-top: 30px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -334,12 +394,13 @@ p, label, h1, h2, h3 {
 
     .ib-section-cases {
         height: 85vh;
-        background-color: #EEE;
+        background-color: #fff;
     }
 
     .ib-section-cases h3 {
         font-size: 36px;
         text-align: center;
+        padding-top: 30px;
     }
 
     .ib-section-cases img {
@@ -476,6 +537,10 @@ p, label, h1, h2, h3 {
         float: right;
         height: 70px;
         padding-right: 64px; 
+    }
+
+    .ib-btn-menu-mob ion-icon {
+        display: none;
     }
 
     .ib-home-presentation {
