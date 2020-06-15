@@ -144,7 +144,7 @@ p, label, h1, h2, h3 {
     .ib-home-presentation h1 {
         font-size: 36px;
         font-weight: 700;
-        margin-top: 135px;
+        margin-top: 90px;
         text-align: center;
         color: #fff
     }
@@ -164,7 +164,7 @@ p, label, h1, h2, h3 {
     .ib-home-cta {
         width: 222px;
         height: 54px;
-        margin-top: 70px;
+        margin-top: 35px;
         border-radius: 100px;
         border: none;
         background-color: #2570FF;
@@ -177,6 +177,25 @@ p, label, h1, h2, h3 {
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
+    }
+
+    .ib-home-powered {
+        padding-top: 35px;
+    }
+
+    .ib-home-powered p {
+        padding-top: 0;
+        padding-left: 0;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+    }
+
+    .ib-home-powered img {
+        padding-top: 10px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 /* Quem Somos */
@@ -212,7 +231,7 @@ p, label, h1, h2, h3 {
 /* Soluções */
 
     .ib-section-solucoes {
-        height: 100%;
+        height: 110vh;
         background-color: #EEE;
     }
 
@@ -249,13 +268,21 @@ p, label, h1, h2, h3 {
         margin-right: 15px;
     }
 
+    .ib-section-solucoes ul {
+        bottom: -50px;
+    }
+
 /* Sispro */
 
     .ib-section-sispro {
-        height: 90vh;
+        height: 95vh;
     }
 
-    .ib-section-sispro p {
+    .ib-sispro-paragraph {
+        display: none;
+    }
+
+    .ib-sispro-paragraph-mob {
         padding-top: 60px;
         font-size: 16px;
         text-align: center;
@@ -327,7 +354,7 @@ p, label, h1, h2, h3 {
 /* Review */
 
     .ib-section-review {
-    height: 95vh;
+    height: 110vh;
     background-color: #EEE;
     }
 
@@ -339,17 +366,19 @@ p, label, h1, h2, h3 {
         margin-right: auto;
     }
 
-    /*
+    .slick-slide {
+        width: 280px;
+    }
+    
     .ib-review-thumb {
         width: 230px;
-        height: 420px;
+        height: 440px;
         margin-top: 30px;
         background-color: #fff;
         border-radius: 8px;
         border: none;
         padding-bottom: 15px;
     }
-    */
 
     #ib-review-estrelas {
         display: table;
@@ -388,6 +417,10 @@ p, label, h1, h2, h3 {
         text-align: left;
         padding-top: 0;
         margin-left: 70px;
+    }
+
+    .ib-section-review ul {
+        bottom: -50px;
     }
 
 /* Cases */
@@ -465,6 +498,10 @@ p, label, h1, h2, h3 {
         margin-right: auto;
     }
 
+    .ib-img-contato {
+        display: none;
+    }
+
 /* Footer */
 
     .ib-section-footer {
@@ -472,11 +509,11 @@ p, label, h1, h2, h3 {
         background-color: #2d2d2d;
     }
     
-    .ib-footer-logo {
-        padding-top: 30px;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
+    .ib-footer-logo img {
+        display: inline-table;
+        padding-top: 15px;
+        padding-right: 10px;
+        padding-left: 16px;
     }
 
     .ib-section-footer h2 {
@@ -508,6 +545,111 @@ p, label, h1, h2, h3 {
 
 }
 
+/* Iphone X */
+@media (min-width: 375px) {
+
+/* Home */
+
+    #ib-home-presentation {
+        width: 100vw;
+        height: 93vh;
+        background-image: url(../images/bg-ideabox.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    .ib-home-overlay {
+        width: 100vw;
+        height: 89vh;
+        position:absolute;
+        left:0;
+        background: rgba(0,0,0,.60);
+    }
+
+    .ib-home-presentation h1 {
+        width: 360px;
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 170px;
+        text-align: center;
+        color: #fff
+    }
+
+    .ib-home-presentation p {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+        padding-top: 30px; 
+    }
+
+    .ib-home-cta {
+        margin-top: 90px;
+    }
+
+    .ib-home-cta:hover {
+        background-color: #1d1d1d;
+        color: #fff;
+    }
+
+    .ib-home-powered p {
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+    }
+
+    .ib-home-powered img {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Soluções */
+
+    .ib-section-solucoes {
+        height: 75vh;
+    }
+
+/* Sispro */
+    .ib-section-sispro {
+        height: 70vh;
+    }
+
+/* Números */
+    .ib-section-numeros {
+        height: 85vh;
+    }
+
+/* Review */
+    .ib-section-review {
+        height: 77vh;
+    }
+
+/* Cases */
+    .ib-section-cases {
+        height: 60vh;
+    }
+
+/* Contato */
+    .ib-section-contato {
+        height: 62vh;
+    }
+
+/* Footer */
+    .ib-section-footer {
+        height: 40vh;
+    }
+
+    .ib-footer-logo {
+        padding-top: 30px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
@@ -521,46 +663,86 @@ p, label, h1, h2, h3 {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    /* Home */
+/* Topbar */
+
+    .ib-topbar {
+        width: 100%;
+        height: 70px;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
 
     .ib-logo{
-        width: 185px;
+        width: 182px;
         height: 35px;
         float: left;
-        margin-left: 128px;
+        margin-left: 64px;
         margin-top: 18px;
         position: relative;
     }
 
     .ib-navbar {
-        display: table;
         float: right;
-        height: 70px;
-        padding-right: 64px; 
+        display: table;
+        width: 640px;
+        margin-right: 64px; 
+    }
+
+    .ib-navbar a {
+        font-family: 'Open Sans';
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin: 15px 15px 0 15px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .ib-navbar-cta {
+        width: 285px;
+        height: 40px;
+        background-color: #2570FF;
+        border-radius: 8px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
     }
 
     .ib-btn-menu-mob ion-icon {
         display: none;
     }
 
-    .ib-home-presentation {
-        background-image: url(../images/bg-ideabox.png);
-        background-repeat: no-repeat;
-        background-position: 50% bottom;
-        position: relative;
-        background-size: 130% auto;
+    .ib-menu-mob {
+        display: none;
     }
 
-    .ib-img-quem-somos {
-        width: 516px;
-        height: 277px;
-        margin-top: 240px;
+    .ib-menu-is-open {
+        display: none;
     }
+
+    .ib-menu-is-closed {
+        display: none;
+    }
+
+    .ib-menu-mob a {
+        display: none;
+    }
+
+/* Home */
 
     .ib-home-presentation h1 {
-        font-size: 36px;
+        font-size: 72px;
         font-weight: 700;
-        margin-top: 180px;
+        margin-top: 150px;
+        margin-left: 64px;
+        margin-right: 64px; 
         text-align: left;
         color: #fff
     }
@@ -568,13 +750,387 @@ p, label, h1, h2, h3 {
     .ib-home-presentation p {
         font-size: 16px;
         font-weight: 500;
-        margin-top: 15px;
         text-align: left;
-        color: #fff
+        margin-left: 64px;
+        padding-top: 15px; 
+        color: #fff;
     }
 
     .ib-home-cta {
         display: none;
+    }
+
+/* Quem Somos */
+
+    #ib-quem-somos {
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .ib-logo-tagline {
+        width: 253px;
+        padding-top: 45px;
+        display: table;
+        margin-left: 150px;
+    }
+
+    .ib-quem-somos p {
+        width: 460px;
+        padding-top: 30px;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 64px;
+    }
+
+    .ib-img-quem-somos {
+        width: 420px;
+        float: right;
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+
+/* Soluções */
+
+    #ib-section-solucoes {
+        width: 100vw;
+        height: 90vh;
+        background-color: #EEE;
+    }
+
+    .ib-section-solucoes h2 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+
+/* Soluções - Carrossel */
+
+    .ib-solucoes-thumb img {
+        width: 80%;
+        padding-top: 15px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-solucoes-thumb h3 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 24px;
+        text-align: left;
+        padding-top: 15px;
+        margin-left: 120px;
+    }
+
+    .ib-solucoes-thumb p {
+        font-size: 16px;
+        text-align: left;
+        padding-top: 0px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+
+/* Sispro */
+
+    .ib-section-sispro {
+        height: 90vh;
+    }
+
+    .ib-sispro-paragraph {
+        width: 460px;
+        padding-top: 60px;
+        font-size: 16px;
+        float: left;
+        text-align: left;
+        margin-left: 64px;
+        display: table;
+    }
+
+    .ib-sispro-paragraph p {
+        padding-top: 15px;
+    }
+
+    .ib-sispro-paragraph-mob {
+        display: none;
+    }
+
+    .ib-section-sispro img {
+        width: 320px;
+        padding-top: 200px;
+        float: right;
+        display: table;
+        margin-left: 0;
+        margin-right: 64px;
+    }
+
+
+/* Números */
+
+    .ib-section-numeros {
+        height: 90vh;
+        background-color: #2570FF;
+    }
+
+    .ib-section-numeros h2 {
+        width: 357px;
+        font-family: 'Open sans', sans-serif;
+        font-weight: 500;
+        font-size: 48px;
+        text-align: left;
+        margin-left: 64px;
+        color: #fff;
+        padding-top: 90px;
+    }
+
+    .ib-numeros-group-thumb1 {
+        width: 250px;
+        float: right;
+        display: table;
+        margin-top: -320px;
+        margin-right: 300px;
+    }
+
+    .ib-numeros-group-thumb2 {
+        width: 250px;
+        float: right;
+        display: table;
+        margin-top: -320px;
+        margin-right: 64px;
+    }
+
+    .ib-numeros-thumb {
+        width: 200px;
+        height: 130px;
+        border-radius: 8px;
+        border: none;
+        background-color: #3B7EFE;
+        
+    }
+
+    .ib-numeros-thumb img {
+        width: 75px;
+        height: 40px;
+        color: #fff;
+        display: table;
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-numeros-thumb h1 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .ib-numeros-thumb p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+    }
+
+/* Review */
+
+    .ib-section-review {
+        height: 85vh;
+        background-color: #EEE;
+    }
+    
+    .ib-section-review h2 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+           
+    .ib-review-thumb {
+        width: 256px!important;
+        height: 410px!important;
+        margin-top: 30px!important;
+        margin-right: 30px!important;
+        background-color: #fff;
+        border-radius: 8px;
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .slick-slide {
+        width: 280px;
+    }
+    
+    #ib-review-estrelas {
+        display: table;
+        padding-top: 30px;
+        margin-left: 70px;
+    }
+    
+    .ib-review-thumb p {
+        font-size: 16px;
+        text-align: center;
+        padding: 30px 7px 0 7px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #ib-review-foto {
+        float: left;
+        padding-left: 15px;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .ib-review-thumb h1 {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        padding-top: 30px;
+        margin-left: 70px;
+    }
+    
+    .ib-review-thumb h2 {
+        font-size: 10px;
+        font-weight: 500;
+        text-align: left;
+        padding-top: 0;
+         margin-left: 70px;
+    }
+
+/* Cases */
+
+    .ib-section-cases {
+        height: 35vh;
+        background-color: #fff;
+    }
+
+    .ib-section-cases h3 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .ib-cases-images {
+        align-items: center;
+        padding-left: 202px;
+    }
+
+    .ib-cases-images img {
+        display: inline-table;
+        margin-right: 60px;
+    }
+
+/* Contato */
+
+    .ib-section-contato {
+        height: 85vh;
+        background-color: #2570FF;
+    }
+
+    .ib-img-contato {
+        width: 420px;
+        display: table;
+        float: left;
+        padding-top: 84px;
+        padding-left: 64px;
+    }
+
+    .ib-section-contato h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        text-align: right;
+        padding-top: 60px;
+        margin-right: 232px;
+    }
+
+    .ib-form {
+        width: 444px;
+        float: right;
+        padding-top: 15px;
+        margin-right: 64px;
+    }
+
+    .ib-section-contato label {
+        display: block;
+        margin-top: 18px;
+        font-family: 'Open sans', sans-serif;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .ib-section-contato input {
+        width: 100%;
+        height: 30px;
+        margin-top: 7px;
+        border-radius: 8px;
+        border: none;
+        background-color: #fff;
+    }
+    
+    #ib-contato-cta {
+        width: 222px;
+        height: 54px;
+        margin-top: 45px;
+        border-radius: 100px;
+        border: none;
+        background-color: #fff;
+        color: #1d1d1d;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ib-contato-cta:hover {
+        background-color: #1d1d1d;
+        color: #fff;
+    }
+
+/* Footer */
+
+    .ib-section-footer {
+        height: 40vh;
+        background-color: #2d2d2d;
+    }
+    
+    .ib-footer-logo {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .ib-section-footer h2 {
+        padding-top: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+    }
+
+    .ib-footer-social-media {
+        display: table;
+        padding-top: 15px;
+        margin: 0 auto 0 auto;
+        
+    }
+
+    .ib-footer-logo-facebook {
+        width: 24px;
+        height: 24px;
+        margin-right: 15px;
+    }
+
+    .ib-footer-logo-instagram {
+        width: 24px;
+        height: 24px;
+        margin-left: 15px;
     }
 
 }
@@ -582,13 +1138,343 @@ p, label, h1, h2, h3 {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .ib-topbar {
+/* Home */
+
+    .ib-home-presentation h1 {
+        font-size: 72px;
+        font-weight: 700;
+        margin-top: 150px;
+        margin-left: 64px;
+        margin-right: 500px; 
+        text-align: left;
+        color: #fff
+    }
+
+    .ib-home-presentation p {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        margin-left: 64px;
+        padding-top: 15px; 
+        color: #fff;
+    }
+
+/* Quem Somos */
+
+    .ib-img-quem-somos {
+        width: 640px;
+        float: right;
+        margin-right: 96px;
+        margin-top: 0;
+    }
+
+/* Soluções */
+
+    #ib-section-solucoes {
+        width: 100vw;
+        height: 95vh;
+        background-color: #EEE;
+    }
+
+    .ib-section-solucoes h2 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+
+/* Soluções - Carrossel */
+
+    .ib-solucoes-thumb img {
+        width: 730px;
+        height: 390px;
+        padding-top: 15px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-solucoes-thumb h3 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 24px;
+        text-align: left;
+        padding-top: 30px;
+        margin-left: 260px;
+    }
+
+    .ib-solucoes-thumb p {
+        font-size: 16px;
+        text-align: left;
+        padding-top: 0px;
+        margin-left: 260px;
+        margin-right: 248px;
+    }
+
+/* Sispro */
+
+    .ib-section-sispro {
+        height: 95vh;
+    }
+
+    .ib-sispro-paragraph {
+        width: 460px;
+        padding-top: 60px;
+        font-size: 16px;
+        float: left;
+        text-align: left;
+        margin-left: 128px;
+        display: table;
+    }
+
+    .ib-sispro-paragraph p {
+        padding-top: 15px;
+    }
+
+    .ib-sispro-paragraph-mob {
+        display: none;
+    }
+
+    .ib-section-sispro img {
+        width: 500px;
+        padding-top: 200px;
+        float: right;
+        display: table;
+        margin-left: 0;
+        margin-right: 128px;
+    }
+
+/* Números */
+
+    .ib-section-numeros {
+        height: 95vh;
+        background-color: #2570FF;
+    }
+
+    .ib-section-numeros h2 {
+        width: 357px;
+        font-family: 'Open sans', sans-serif;
+        font-weight: 500;
+        font-size: 56px;
+        text-align: left;
+        margin-left: 240px;
+        color: #fff;
+        padding-top: 90px;
+    }
+
+    .ib-numeros-group-thumb1 {
+        width: 250px;
+        float: right;
+        display: table;
+        margin-top: -390px;
+        margin-right: 390px;
+    }
+
+    .ib-numeros-group-thumb2 {
+        width: 250px;
+        float: right;
+        display: table;
+        margin-top: -390px;
+        margin-right: 128px;
+    }
+
+    .ib-numeros-thumb {
+        width: 225px;
+        height: 164px;
+        border-radius: 8px;
+        border: none;
+        background-color: #3B7EFE;
+        
+    }
+
+    .ib-numeros-thumb img {
+        width: 75px;
+        height: 40px;
+        color: #fff;
+        display: table;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-numeros-thumb h1 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .ib-numeros-thumb p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+    }
+
+/* Review */
+
+    .ib-section-review {
+        height: 95vh;
+        background-color: #EEE;
+    }
+    
+    .ib-section-review h2 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+           
+    .ib-review-thumb {
+        width: 285px!important;
+        height: 410px!important;
+        margin-top: 45px!important;
+        margin-right: 30px!important;
+        background-color: #fff;
+        border-radius: 8px;
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .slick-slide {
+        width: 310px;
+    }
+    
+    #ib-review-estrelas {
+        display: table;
+        padding-top: 30px;
+        margin-left: 70px;
+    }
+    
+    .ib-review-thumb p {
+        font-size: 16px;
+        text-align: center;
+        padding: 30px 7px 0 7px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #ib-review-foto {
+        display: fixed;
+        float: left;
+        padding-left: 15px;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .ib-review-thumb h1 {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        padding-top: 30px;
+        margin-left: 70px;
+    }
+    
+    .ib-review-thumb h2 {
+        font-size: 10px;
+        font-weight: 500;
+        text-align: left;
+        padding-top: 0;
+         margin-left: 70px;
+    }
+
+/* Cases */
+
+    .ib-section-cases {
+        height: 35vh;
+        background-color: #fff;
+    }
+
+    .ib-section-cases h3 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .ib-cases-images {
         width: 100%;
-        height: 70px;
+        display: table;
+        margin: 0 128px;
+    }
+
+    .ib-cases-images img {
+        padding-top: 45px;
+        padding-right: 90px;
+        display: inline-table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Contato */
+
+    .ib-section-contato {
+        height: 95vh;
+        background-color: #2570FF;
+    }
+
+    .ib-img-contato {
+        width: 640px;
+        display: table;
+        float: left;
+        padding-top: 84px;
+        padding-left: 128px;
+    }
+
+    .ib-section-contato h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        text-align: right;
+        padding-top: 60px;
+        margin-right: 330px;
+    }
+
+    .ib-form {
+        width: 444px;
+        float: right;
+        padding-top: 15px;
+        margin-right: 164px;
+    }
+
+    .ib-section-contato label {
         display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
+        margin-top: 18px;
+        font-family: 'Open sans', sans-serif;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .ib-section-contato input {
+        width: 100%;
+        height: 30px;
+        margin-top: 7px;
+        border-radius: 8px;
+        border: none;
+        background-color: #fff;
+    }
+    
+    #ib-contato-cta {
+        width: 222px;
+        height: 54px;
+        margin-top: 45px;
+        border-radius: 100px;
+        border: none;
+        background-color: #fff;
+        color: #1d1d1d;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ib-contato-cta:hover {
+        background-color: #1d1d1d;
+        color: #fff;
     }
 
 }
@@ -596,14 +1482,6 @@ p, label, h1, h2, h3 {
 /* Extra large devices (large desktops, 1366px and up) */
 @media (min-width: 1366px) {
 
-    .ib-topbar {
-        width: 100%;
-        height: 70px;
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
 
 }
 
