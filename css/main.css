@@ -1321,6 +1321,10 @@ p, label, h1, h2, h3 {
         margin-right: 248px;
     }
 
+    .ib-section-solucoes ul {
+        bottom: -25px;
+    }
+
 /* Sispro */
 
     .ib-section-sispro {
@@ -1597,6 +1601,69 @@ p, label, h1, h2, h3 {
 /* Extra large devices (large desktops, 1366px and up) */
 @media (min-width: 1366px) {
 
+/* Home*/
+    #ib-home-presentation {
+        width: 1920px;
+        height: 1080px;
+        background-image: url(../images/bg-ideabox.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    .ib-home-overlay {
+        width: 100%;
+        height: 100vh
+    }
+
+/* Quem Somos */
+
+    #ib-quem-somos {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #ib-section-solucoes {
+        width: 100vw;
+        height: 100vh;
+    }
+
+/* Sispro */
+
+    .ib-section-sispro {
+        height: 100vh;
+    }
+
+/* Números */
+
+    .ib-section-numeros {
+        height: 100vh;
+    }
+
+/* Review */
+
+    .ib-section-review {
+        height: 100vh;
+        background-color: #EEE;
+    }
+
+/* Cases */
+
+    .ib-section-cases {
+        height: 35vh;
+        background-color: #fff;
+    }
+
+/* Contato */
+
+    .ib-section-contato {
+        height: 95vh;
+        background-color: #2570FF;
+    }
+
+    .ib-section-footer {
+        height: 42vh;
+    }
 
 }
 

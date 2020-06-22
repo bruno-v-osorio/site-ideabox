@@ -283,8 +283,8 @@
             <h2>Fone: (51) 9 8455.3300</h2>
             <h2>E-mail: ideabox@sispro.com.br</h2>
         <div class="ib-footer-social-media">
-            <a href="#"><img src="images/logo-facebook.png" class="ib-footer-logo-facebook"></a>
-            <a href="https://www.instagram.com/ideaboxoficial/"><img src="images/logo-instagram.png" class="ib-footer-logo-instagram"></a>
+            <a href="https://www.facebook.com/SisproERP/"><img src="images/logo-facebook.png" class="ib-footer-logo-facebook"></a>
+            <a href="https://www.instagram.com/sispro_software/"><img src="images/logo-instagram.png" class="ib-footer-logo-instagram"></a>
         </div>
     </section>
 
@@ -298,6 +298,8 @@
 <!--      SCRIPTS / carrossel soluções      -->
     <script type="text/javascript">
                 $('.ib-solucoes-carrousel').slick({
+        infinite: true,
+        dots: true,
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 1,
@@ -341,9 +343,11 @@
     <script type="text/javascript">
         $('.ib-review-carrousel').slick({
             variableWidth: true,
+            dots: true,
             centerMode: true,
+            infinite: false,
             centerPadding: '60px',
-            slidesToShow: 1,
+            slidesToShow: 3,
             responsive: [
             {
             breakpoint: 992,
