@@ -8,7 +8,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-p, label, h1, h2, h3 {
+p, label, h1, h2, h3, h4 {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -272,7 +272,7 @@ p, label, h1, h2, h3 {
     }
 
     .ib-section-solucoes ul {
-        margin-bottom: 0;
+        margin-bottom: -15px;
     }
 
 /* Sispro */
@@ -366,11 +366,6 @@ p, label, h1, h2, h3 {
         text-align: center;
         padding-top: 15px;
     }
-
-    .slick-slide {
-        width: 300px;
-        padding-right: 15px;
-    }
     
     .ib-review-thumb {
         width: 230px;
@@ -380,6 +375,7 @@ p, label, h1, h2, h3 {
         border-radius: 8px;
         border: none;
         padding-bottom: 15px;
+        margin-right: 30px;
     }
 
     #ib-review-estrelas {
@@ -390,10 +386,12 @@ p, label, h1, h2, h3 {
     }
 
     .ib-review-thumb p {
+        width: 200px;
+        height: 270px;
         font-size: 16px;
         text-align: center;
-        padding: 15px 7px 15px 7px;
-        align-items: center;
+        display: block;
+        margin: auto;
     }
 
     .ib-review-reviewer {
@@ -413,7 +411,7 @@ p, label, h1, h2, h3 {
         font-size: 14px;
         font-weight: 700;
         text-align: left;
-        margin-left: 55px;
+        margin-left: 70px;
     }
 
     .ib-review-reviewer h3 {
@@ -421,7 +419,7 @@ p, label, h1, h2, h3 {
         font-size: 10px;
         font-weight: 500;
         text-align: left;
-        margin-left: 55px;
+        margin-left: 70px;
     }
 
     .ib-section-review ul {
@@ -442,7 +440,7 @@ p, label, h1, h2, h3 {
     }
 
     .ib-section-cases img {
-        padding-top: 60px;
+        padding-top: 45px;
         display: table;
         margin-left: auto;
         margin-right: auto;
@@ -566,7 +564,7 @@ p, label, h1, h2, h3 {
 
     .ib-home-overlay {
         width: 100vw;
-        height: 89vh;
+        height: 93vh;
         position:absolute;
         left:0;
         background: rgba(0,0,0,.60);
@@ -1018,7 +1016,7 @@ p, label, h1, h2, h3 {
     .ib-review-thumb {
         width: 256px!important;
         height: 410px!important;
-        margin-top: 60px!important;
+        margin-top: 30px!important;
         margin-right: 30px!important;
         background-color: #fff;
         border-radius: 8px;
@@ -1026,14 +1024,13 @@ p, label, h1, h2, h3 {
         padding-bottom: 15px;
     }
 
-    .slick-slide {
-        width: 280px;
+    .ib-review-thumb:first-child {
+        margin-left: 210px;
     }
     
     #ib-review-estrelas {
         display: table;
         padding-top: 30px;
-        margin-left: 70px;
     }
     
     .ib-review-thumb p {
@@ -1220,7 +1217,7 @@ p, label, h1, h2, h3 {
     .ib-home-presentation h1 {
         font-size: 72px;
         font-weight: 700;
-        margin-top: 150px;
+        margin-top: 200px;
         margin-left: 64px;
         margin-right: 500px; 
         text-align: left;
@@ -1238,7 +1235,7 @@ p, label, h1, h2, h3 {
 
     .ib-home-powered {
         float: right;
-        padding-top: 42px;
+        padding-top: 125px;
         padding-right: 100px;
     }
 
@@ -1459,9 +1456,7 @@ p, label, h1, h2, h3 {
     }
     
     #ib-review-estrelas {
-        display: table;
         padding-top: 30px;
-        margin-left: 70px;
     }
     
     .ib-review-thumb p {
@@ -1494,7 +1489,7 @@ p, label, h1, h2, h3 {
         font-weight: 500;
         text-align: left;
         padding-top: 0;
-         margin-left: 70px;
+        margin-left: 70px;
     }
 
 /* Cases */
@@ -1599,91 +1594,408 @@ p, label, h1, h2, h3 {
 }
 
 /* Extra large devices (large desktops, 1366px and up) */
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
 
-/* Home*/
+/* Home */
+
     #ib-home-presentation {
-        width: 1920px;
-        height: 1080px;
-        background-image: url(../images/bg-ideabox.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        position: relative;
+        width: 100vw;
+        height: 100vh;
     }
 
     .ib-home-overlay {
         width: 100%;
-        height: 100vh
+        height: 100vh;
+        position:absolute;
+        left:0;
+        background: rgba(0,0,0,.45);
     }
 
-/* Quem Somos */
+    .ib-home-presentation h1 {
+        font-size: 72px;
+        font-weight: 700;
+        margin-top: 200px;
+        margin-left: 64px;
+        margin-right: 500px; 
+        text-align: left;
+        color: #fff
+    }
+
+    .ib-home-presentation p {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        margin-left: 64px;
+        padding-top: 15px; 
+        color: #fff;
+    }
+
+    .ib-home-powered {
+        float: right;
+        padding-top: 125px;
+        padding-right: 100px;
+    }
+
+    .ib-home-powered p {
+        font-size: 10px;
+        margin-left: 32px;
+    }
+
+    /* Quem Somos */
 
     #ib-quem-somos {
         width: 100vw;
         height: 100vh;
     }
 
+    .ib-logo-tagline {
+        width: 272px;
+        padding-top: 60px;
+        display: table;
+        margin-left: 272px;
+    }
+
+    .ib-quem-somos p {
+        width: 620px;
+        padding-left: 0px;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 113px;
+        margin-right: 0px;
+        margin-top: 0;
+    }
+
+    .ib-img-quem-somos {
+        width: 825px;
+        padding-top: 45px;
+        padding-right: 64px;
+    }
+
+    /* Soluções */
+
     #ib-section-solucoes {
         width: 100vw;
         height: 100vh;
     }
 
-/* Sispro */
+    .ib-section-solucoes h2 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 45px;
+    }
+
+
+    /* Soluções - Carrossel */
+
+    .ib-solucoes-thumb img {
+        width: 730px;
+        height: 390px;
+        padding-top: 45px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-solucoes-thumb h3 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 28px;
+        text-align: left;
+        padding-top: 30px;
+        margin-left: 440px;
+    }
+
+    .ib-solucoes-thumb p {
+        width: 730px;
+        font-size: 16px;
+        line-height: 24px;;
+        text-align: left;
+        padding-top: 15px;
+        margin-left: 440px;
+        margin-right: 248px;
+    }
+
+    .ib-section-solucoes ul {
+        bottom: -45px;
+    }
+
+    /* Sispro */
 
     .ib-section-sispro {
         height: 100vh;
     }
 
-/* Números */
+    .ib-sispro-paragraph {
+        width: 730px;
+        padding-top: 60px;
+        font-size: 18px;
+        float: left;
+        text-align: left;
+        margin-left: 128px;
+        display: table;
+    }
+
+    .ib-sispro-paragraph p {
+        padding-top: 45px;
+    }
+
+    .ib-sispro-paragraph-mob {
+        display: none;
+    }
+
+    .ib-section-sispro img {
+        width: 500px;
+        padding-top: 230px;
+        float: right;
+        display: table;
+        margin-left: 0;
+        margin-right: 154px;
+    }
+
+    /* Números */
 
     .ib-section-numeros {
         height: 100vh;
     }
 
-/* Review */
+    .ib-section-numeros h2 {
+        width: 357px;
+        font-family: 'Open sans', sans-serif;
+        font-weight: 500;
+        font-size: 64px;
+        text-align: left;
+        margin-left: 128px;
+        color: #fff;
+        padding-top: 90px;
+    }
+
+    .ib-numeros-group-thumb1 {
+        width: 250px;
+        float: right;
+        display: table;
+        margin-top: -500px;
+        margin-bottom: 0px;
+        margin-right: 470px;
+    }
+
+    .ib-numeros-group-thumb2 {
+        width: 250px;
+        float: right;
+        display: table;
+        margin-top: -500px;
+        margin-bottom: 0px;
+        margin-right: 128px;
+    }
+
+    .ib-numeros-thumb {
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+        border: none;
+        background-color: #3B7EFE;
+        
+    }
+
+    .ib-numeros-thumb img {
+        width: 90px;
+        height: 90px;
+        color: #fff;
+        display: table;
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    .ib-numeros-thumb h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
+    .ib-numeros-thumb p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+
+    /* Review */
 
     .ib-section-review {
         height: 100vh;
         background-color: #EEE;
     }
 
-/* Cases */
+    .ib-section-review h2 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 45px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    .ib-review-thumb {
+        width: 285px!important;
+        height: 510px!important;
+        margin-top: 45px!important;
+        margin-right: 30px!important;
+        background-color: #fff;
+        border-radius: 8px;
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .slick-slide {
+        width: 310px;
+    }
+
+    #ib-review-estrelas {
+        padding-top: 30px;
+    }
+
+    .ib-review-thumb p {
+        height: 370px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #ib-review-foto {
+        display: fixed;
+        float: left;
+        padding-left: 15px;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .ib-review-thumb h1 {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        padding-top: 30px;
+        margin-left: 70px;
+    }
+
+    .ib-review-thumb h2 {
+        font-size: 10px;
+        font-weight: 500;
+        text-align: left;
+        padding-top: 0;
+        margin-left: 70px;
+    }
+
+    /* Cases */
 
     .ib-section-cases {
         height: 35vh;
         background-color: #fff;
     }
 
-/* Contato */
+    .ib-section-cases h3 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .ib-cases-images {
+        display: table;
+        padding-left: 0;
+        margin: 0 520px;
+    }
+
+    .ib-cases-images img {
+        padding-top: 45px;
+        padding-right: 90px;
+        display: inline-table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Contato */
 
     .ib-section-contato {
         height: 95vh;
         background-color: #2570FF;
     }
 
-    .ib-section-footer {
-        height: 42vh;
+    .ib-img-contato {
+        width: 740px;
+        display: table;
+        float: left;
+        padding-top: 28px;
+        padding-left: 128px;
     }
 
+    .ib-section-contato h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        text-align: right;
+        padding-top: 120px;
+        margin-right: 420px;
+    }
+
+    .ib-form {
+        width: 444px;
+        float: right;
+        padding-top: 30px;
+        margin-right: 256px;
+    }
+
+    .ib-section-contato label {
+        display: block;
+        margin-top: 18px;
+        font-family: 'Open sans', sans-serif;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .ib-section-contato input {
+        width: 100%;
+        height: 30px;
+        margin-top: 7px;
+        border-radius: 8px;
+        border: none;
+        background-color: #fff;
+    }
+
+    #ib-contato-cta {
+        width: 222px;
+        height: 54px;
+        margin-top: 45px;
+        border-radius: 100px;
+        border: none;
+        background-color: #fff;
+        color: #1d1d1d;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ib-contato-cta:hover {
+        background-color: #1d1d1d;
+        color: #fff;
+    }
+
+    .ib-section-footer {
+        height: 36vh;
+    }
 }
+
 
 /* Classes Utilitárias */
 
 .ib-quem-somos-link {
     width: 1px;
     color: transparent;
-}
-
-.ib-text-dark {
-    color: #1d1d1d;
-}
-
-.ib-text-white {
-    color: #fff;
-}
-
-.ib-text-center {
-    text-align: center;
 }
 
 .ib-bg-blue {
@@ -1698,131 +2010,6 @@ p, label, h1, h2, h3 {
     background-color: #1d1d1d;
 }
 
-.ib-mar-15 {
-    margin: 15px;
-}
-
-.ib-mar-top-15 {
-    margin-top: 15px;
-}
-
-.ib-mar-right-15 {
-    margin-right: 15px;
-}
-
-.ib-mar-bottom-15 {
-    margin-bottom: 15px;
-}
-
-.ib-mar-left-15 {
-    margin-left: 15px;
-}
-
-.ib-pad-15 {
-    padding: 15px;
-}
-
-.ib-pad-top-15 {
-    padding-top: 15px;
-}
-
-.ib-pad-right-15 {
-    padding-right: 15px;
-}
-
-.ib-pad-bottom-15 {
-    padding-bottom: 15px;
-}
-
-.ib-pad-left-15 {
-    padding-left: 15px;
-}
-
-.ib-mar-30 {
-    margin: 30px;
-}
-
-.ib-mar-top-30 {
-    margin-top: 30px;
-}
-
-.ib-mar-right-30 {
-    margin-right: 30px;
-}
-
-.ib-mar-bottom-30 {
-    margin-bottom: 30px;
-}
-
-.ib-mar-left-30 {
-    margin-left: 30px;
-}
-
-.ib-pad-30 {
-    padding: 30px;
-}
-
-.ib-pad-top-30 {
-    padding-top: 30px;
-}
-
-.ib-pad-right-30 {
-    padding-right: 30px;
-}
-
-.ib-pad-bottom-30 {
-    padding-bottom: 30px;
-}
-
-.ib-pad-left-30 {
-    padding-left: 30px;
-}
-
-.ib-pad-60 {
-    padding: 60px;
-}
-
-.ib-pad-top-60 {
-    padding-top: 60px;
-}
-
-.ib-pad-right-60 {
-    padding-right: 60px;
-}
-
-.ib-pad-bottom-60 {
-    padding-bottom: 60px;
-}
-
-.ib-pad-left-60 {
-    padding-left: 60px;
-}
-
 .ib-no-padding {
     padding: 0!important;
-}
-
-.ib-text-subtitle {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-
-.ib-text-light {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
-
-.ib-text-medium {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-}
-
-.ib-text-large {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
-}
-
-.ib-text-xlarge {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 72px;
 }

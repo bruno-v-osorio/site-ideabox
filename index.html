@@ -239,9 +239,9 @@
     <section class="ib-section-cases" id="ib-section-cases">
         <h3>Cases</h3>
     <div class="ib-cases-images">
-        <img src="images/logo-ctd.png" alt="Logo CTD">
-        <img src="images/logo-muck.png" alt="Logo Imobiliária Muck">
-        <img src="images/logo-ideathon.png" alt="Logo Ideathon Covid-19">
+        <a href="https://www.site.ctd.com.br/"> <img src="images/logo-ctd.png" alt="Logo CTD"></a>
+        <a href="http://www.muck.com.br/"> <img src="images/logo-muck.png" alt="Logo Imobiliária Muck"></a>
+        <a href="http://ideathon.online/"> <img src="images/logo-ideathon.png" alt="Logo Ideathon Covid-19"></a>
     </div>
     </section>
 
@@ -299,6 +299,7 @@
     <script type="text/javascript">
                 $('.ib-solucoes-carrousel').slick({
         infinite: true,
+        arrows: true,
         dots: true,
         centerMode: true,
         centerPadding: '60px',
@@ -344,17 +345,18 @@
         $('.ib-review-carrousel').slick({
             variableWidth: true,
             dots: true,
-            centerMode: true,
+            centerMode: false,
             infinite: false,
             centerPadding: '60px',
             slidesToShow: 3,
+            slidesToScroll: 2, 
             responsive: [
             {
             breakpoint: 992,
             settings: {
                 arrows: true,
                 dots: true,
-                draggable: false,
+                draggable: true,
                 centerMode: true,
                 centerPadding: '40px',
                 slidesToShow: 1
@@ -365,7 +367,7 @@
             settings: {
                 arrows: true,
                 dots: true,
-                draggable: false,
+                draggable: true,
                 centerMode: true,
                 centerPadding: '40px',
                 slidesToShow: 1
@@ -374,9 +376,10 @@
             {
             breakpoint: 320,
             settings: {
+                variableWidth: true,
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: '60px',
                 slidesToShow: 1
             }
             }
