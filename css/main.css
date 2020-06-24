@@ -12,6 +12,10 @@ p, label, h1, h2, h3, h4 {
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    overflow-x: hidden !important;
+}
+
 @media screen and (min-width: 320px) {
 
     .ib-menu-overlay {
@@ -1595,6 +1599,7 @@ p, label, h1, h2, h3, h4 {
 
 /* Extra large devices (large desktops, 1366px and up) */
 @media (min-width: 1360px) {
+
 
 /* Home */
 
