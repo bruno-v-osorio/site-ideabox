@@ -6,15 +6,18 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-y:content;
 }
 
 p, label, h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    overflow-x: hidden !important;
+#anchor {
+    margin-top: -100px;
+    padding-top: -100px;
 }
+
 
 /* Root 1920px */
 
@@ -150,7 +153,7 @@ body {
 
     #ib-quem-somos {
         width: 100vw;
-        height: 100vh;
+        height: 75vh;
         background-color: #EEE;
     }
 
@@ -254,7 +257,25 @@ body {
         margin-top: 45px;
     }
 
+    .ib-sispro-cta {
+        width: 200px;
+        height: 40px;
+        background-color: #2570FF;
+        border-radius: 8px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
     .ib-sispro-paragraph-mob {
+        display: none;
+    }
+
+    .ib-sispro-cta-mob {
         display: none;
     }
 
@@ -524,11 +545,11 @@ body {
         display: table;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
         padding-top: 32px;
     }
 
     .ib-footer-logo img {
+        height: 26px;
         margin-left: 16px;
     }
 
@@ -560,7 +581,12 @@ body {
     }
 
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+/* CELULAR */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    * {
+        overflow-x: hidden;
+    }
 
     .ib-topbar {
         overflow: hidden;
@@ -592,24 +618,24 @@ body {
     }
 
     .ib-btn-menu-mob {
-        width: 54px;
-        height: 54px;
+        width: 42px;
+        height: 42px;
         display: block;
         border-radius: 50%;
         border: none;
-        background-color: transparent;
+        background-color: #1d1d1d;
+        color: #fff;
         position: fixed;
         right: 32px;
-        top: 10px;
-        z-index: 1250;
+        top: 16px;
+        z-index: 12500;
         cursor: pointer;
     }
 
     .ib-btn-menu-mob ion-icon {
         vertical-align: middle;
-        background-color: #fff;
+        display: initial;
         color: #fff;
-        z-index: 1500;
     }
 
     .ib-menu-mob {
@@ -659,9 +685,10 @@ body {
         font-size: 36px;
         font-weight: 700;
         text-align: center;
-        margin-top: 96px;
-        margin-left: 8px;
-        margin-right: 0; 
+        margin-top: 128px;
+        display: center;
+        margin-left: auto;
+        margin-right: auto; 
     }
 
     .ib-home-presentation p {
@@ -669,8 +696,9 @@ body {
         font-size: 12px;
         font-weight: 500;
         text-align: center;
-        margin-left: 8px;
-        margin-top: 32px; 
+        display: center;
+        margin-left: auto;
+        margin-right: auto;  
     }
 
     .ib-home-presentation a {
@@ -698,7 +726,7 @@ body {
     .ib-home-powered {
         float: none;
         display: table;
-        margin-top: 0;
+        margin-top: 4px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -721,22 +749,24 @@ body {
     }
 
     .ib-quem-somos-texto {
-        width: 300px;
+        width: 320px;
         float: none;
-        margin-left: 8px;
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
         padding-top: 64px;
     }
 
     .ib-logo-tagline {
-        width: 224px;
-        display: table;
+        width: 300px;
+        display: block;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 0;
     }
 
     .ib-quem-somos-texto p {
-        width: 300px;
+        width: 320px;
         font-size: 16px;
         line-height: 24px;
         text-align: center;
@@ -755,13 +785,13 @@ body {
 /* Soluções */
 
     #ib-section-solucoes {
-        height: 110vh;
+        height: 100vh;
     }
 
     .ib-section-solucoes h2 {
         font-family: 'Open sans', sans-serif;
         font-size: 28px;
-        padding-top: 64px;
+        padding-top: 32px;
     }
 
 /* Soluções - Carrossel */
@@ -772,7 +802,7 @@ body {
     }
 
     .ib-solucoes-thumb img {
-        width: 300px;
+        width: 260px;
         height: 160px;
         display: table;
         margin-left: auto;
@@ -793,11 +823,16 @@ body {
         line-height: 24px;;
         text-align: center;
         padding-top: 16px;
-        margin-left: 0;
-        margin-right: 0;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 /* Sispro */
+
+    .ib-section-sispro {
+        height: 100vh;
+    }
   
     .ib-sispro-paragraph {
         display: none;
@@ -806,11 +841,11 @@ body {
     .ib-sispro-paragraph-mob {
         width: 300px;
         font-size: 16px;
-        display: table;
         text-align: center;
-        margin-top: 80px;
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-top: 64px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .ib-section-sispro img {
@@ -820,6 +855,24 @@ body {
         margin-top: 96px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .ib-sispro-cta-mob {
+        width: 200px;
+        height: 40px;
+        display: table;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #2570FF;
+        border-radius: 8px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
     }
 
 /* Números */
@@ -843,8 +896,8 @@ body {
         margin-top: 16px;
         padding-right: 0;
         display: table;
-        margin-left: 8px;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         float: none;
     }
@@ -854,8 +907,8 @@ body {
         height: 225px;
         display: table;
         margin-top: 0px;
-        margin-left: 8px;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 0;
         text-align: center;
         float: none;
@@ -897,13 +950,16 @@ body {
 /* Review */
 
     .ib-section-review {
-        height: 442vh;
+        height: 385vh;
     }
 
     .ib-section-review h2 {
         width: 315px;
         font-size: 28px;
         padding-top: 64px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .ib-review-thumb {
@@ -930,7 +986,7 @@ body {
 /* Cases */
 
     .ib-section-cases {
-        height: 100vh;
+        height: 85vh;
     }
 
     .ib-cases-images {
@@ -962,7 +1018,7 @@ body {
     .ib-section-contato h3 {
         font-size: 28px;
         text-align: center;
-        padding-top: 32px;
+        padding-top: 36px;
         margin-right: 0;
     }
 
@@ -977,7 +1033,7 @@ body {
 /* Footer */
 
     .ib-section-footer {
-        height: 50vh;
+        height: 46vh;
     }
 
     .ib-footer-logo {
@@ -992,11 +1048,97 @@ body {
 
 @media screen and (min-width: 375px) and (max-width: 1365px) {
 
+    * {
+        overflow-x: hidden;
+    }
+
+    .ib-topbar {
+        overflow: hidden;
+        width: 100vw;
+        height: 70px;
+    }
+
+    .ib-logo{
+        width: 126px;
+        height: 22px;
+        float: left;
+        display: table;
+        margin-left: 16px;
+        margin-top: 24px;
+    }
+
+    .ib-navbar {
+        display: none; 
+    }
+
+    .ib-menu-overlay {
+        width: 100%;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+    }
+
+    .ib-btn-menu-mob {
+        width: 42px;
+        height: 42px;
+        display: block;
+        border-radius: 50%;
+        border: none;
+        background-color: #1d1d1d;
+        color: #fff;
+        position: fixed;
+        right: 32px;
+        top: 16px;
+        z-index: 12500;
+        cursor: pointer;
+    }
+
+    .ib-btn-menu-mob ion-icon {
+        vertical-align: middle;
+        display: initial;
+        color: #fff;
+    }
+
+    .ib-menu-mob {
+        width: 240px;
+        height: 100vh;
+        display: block;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        padding: 100px 30px 30px;
+        z-index: 1200;
+        transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    .ib-menu-is-open {
+        right: 0;
+    }
+
+    .ib-menu-is-closed {
+        right: -240px;
+    }
+
+    .ib-menu-mob a {
+        width: 100%;
+        height: 60px;
+        display: block;
+        line-height: 60px;
+        color: #fff;
+        font-family: 'Open sans', sans-serif;
+        text-decoration: none;
+    }
+
 /* Home */
 
     .ib-home-presentation h1 {
+        width: 320px;
+        font-size: 42px;
         text-align: center;
-        display: table;
+        display: center;
         margin-top: 128px;
         margin-left: auto;
         margin-right: auto; 
@@ -1024,21 +1166,39 @@ body {
 /* Quem Somos */
 
     #ib-quem-somos {
-        height: 124vh;
+        height: 120vh;
     }
 
     .ib-quem-somos-texto {
+        width: 320px;
+        float: none;
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 64px;
+    }
+
+    .ib-logo-tagline {
+        width: 300px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+
+    .ib-quem-somos-texto p {
+        width: 320px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding-top: 32px;
+    }
+
+    .ib-img-quem-somos {
         width: 300px;
         float: none;
         display: table;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
- 
-    .ib-img-quem-somos {
-        display: table;
-        margin-top: 48px;
+        margin-top: 32px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -1057,34 +1217,81 @@ body {
 
 /* Soluções - Carrossel */
 
+    .ib-solucoes-carrousel {
+        overflow-y: hidden;
+    }
+
     .ib-solucoes-thumb {
+        display: fixed;
         height: 544px;
     }
 
+    .ib-solucoes-thumb img {
+        width: 300px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-solucoes-thumb h3 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 32px;
+        margin-left: 0;
+    }
+
     .ib-solucoes-thumb p {
-        height: 320px;
-        font-size: 18px;
+        width: 300px;
+        font-size: 16px;
+        text-align: center;
         display: table;
         margin-right: auto;
         margin-left: auto;
     }
 
-
 /* Sispro */
 
+    .ib-sispro-paragraph {
+        display: none;
+    }
+
     .ib-sispro-paragraph-mob {
-        font-size: 18px;
-        display: table;
+        width: 320px;
+        font-size: 16px;
+        text-align: center;
         margin-top: 80px;
+        display: table;
         margin-left: auto;
         margin-right: auto;
     }
 
     .ib-section-sispro img {
+        width: 320px;
+        float: none;
         display: table;
         margin-top: 128px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .ib-sispro-cta-mob {
+        width: 200px;
+        height: 40px;
+        display: table;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #2570FF;
+        border-radius: 8px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
     }
 
 /* Números */
@@ -1093,31 +1300,76 @@ body {
         height: 100vh;
     }
 
+    .ib-section-numeros h2 {
+        width: 300px;
+        font-size: 28px;
+        text-align: center;
+        float: none;
+        padding-top: 64px;
+        margin: 0 auto;
+    }
+
     .ib-numeros-group-thumb1 {
+        width: 288px;
+        height: 225px;
+        margin-top: 16px;
+        padding-right: 0;
         display: table;
-        margin-top: 32px;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
+        float: none;
     }
 
     .ib-numeros-group-thumb2 {
+        width: 288px;
+        height: 225px;
         display: table;
         margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 0;
+        text-align: center;
+        float: none;
     }
 
     .ib-numeros-thumb {
-        display: table;
+        width: 288px;
+        height: 104px;
         margin-top: 32px;
+        padding-right: 0;
+        display: table;
+        margin-left: 8px;
+        margin-right: 0;
+    }
+
+    .ib-numeros-thumb img {
+        width: 43px;
+        height: 23px;
+        padding-top: 0;
+        display: table;
+        margin-top: 16px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .ib-numeros-thumb h1 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .ib-numeros-thumb p {
+        font-size: 14px;
+        text-align: center;
+        margin-left: 0;
     }
 
 /* Review */
 
     .ib-section-review {
-        height: 308vh;
+        height: 300vh;
     }
 
     .ib-section-review h2 {
@@ -1129,10 +1381,37 @@ body {
         margin-right: auto;
     }
 
+    .ib-review-thumb {
+        width: 300px;
+        height: 416px;
+        margin-top: 24px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-review-thumb p {
+        display: table;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .ib-review-reviewer {
+        margin-top: 32px;
+    }
+
 /* Cases */
 
     .ib-section-cases {
-        height: 90vh;
+        height: 100vh;
+    }
+
+    .ib-section-cases h3 {
+        font-size: 36px;
+        text-align: center;
+        padding-top: 64px;
     }
 
     .ib-cases-images {
@@ -1144,7 +1423,7 @@ body {
     }
 
     .ib-cases-images img {
-        padding-top: 64px;
+        padding-top: 80px;
         padding-right: 0;
         display: table;
         margin-left: auto;
@@ -1153,22 +1432,42 @@ body {
 
 /* Contato */
 
+    .ib-section-contato {
+        height: 100vh;
+    }
+
+    .ib-img-contato {
+        display: none;
+    }
+
     .ib-section-contato h3 {
-        padding-top: 64px;
+        font-size: 36px;
+        text-align: center;
+        padding-top: 128px;
+        margin-right: 0;
     }
 
     .ib-form {
-        margin-top: 48px;
+        width: 300px;
+        float: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    #ib-contato-cta {
-        margin-top: 96px;
-    }
-
-/* Footer */
+    /* Footer */
 
     .ib-section-footer {
         height: 36vh;
+    }
+
+    .ib-footer-logo {
+        width: 300px;
+        display: table;
+        text-align: center;
+        padding-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -1176,25 +1475,56 @@ body {
 
 /* Home */
 
+    .ib-logo {
+        margin-left: 64px;
+    }
+
     .ib-navbar {
         width: 750px;
+        margin-right: -32px;
     }
 
     .ib-home-presentation h1 {
-        margin-top: 192px;
+        margin-top: 160px;
+        margin-left: 64px;
+    }
+
+    .ib-home-presentation p {
+        margin-left: 64px;
+        margin-top: 32px; 
     }
 
     .ib-home-powered {
-        margin-top: 192px;
+        margin-top: 32px;
+        margin-right: 64px;
     }
 
-/* Quem Somos */   
+    .ib-home-powered img {
+        float: right;
+        margin-top: 4px;
+    }
+
+    .ib-home-powered p {
+        margin-top: 32px;
+    }
+
+    #ib-quem-somos-link {
+        bottom: 0;
+    }
+
+/* Quem Somos */
+
+    #ib-quem-somos {
+        width: 100vw;
+        height: 75vh;
+        background-color: #EEE;
+    }
     
     .ib-quem-somos-texto {
         width: 520px;
         float: left;
-        margin-left: 256px;
-        padding-top: 128px;
+        margin-left: 32px;
+        padding-top: 64px;
     }
 
     .ib-logo-tagline {
@@ -1203,19 +1533,27 @@ body {
 
     .ib-quem-somos-texto p {
         width: 520px;
+        padding-top: 16px;
         margin-top: 0;
+        margin-left: 32px;
     }
 
     .ib-img-quem-somos {
-        width: 600px;
-        margin-top: 280px;
-        margin-right: 256px;
+        width: 624px;
+        margin-top: 160px;
+        margin-right: 64px;
     }
 
 /* Soluções */
 
     #ib-section-solucoes {
-        height: 125vh;
+        height: 100vh;
+        padding-top: 70px; 
+    }
+
+    .ib-section-solucoes h2 {
+        font-size: 28px;
+        padding-top: 16px;
     }
 
 /* Soluções - Carrossel */
@@ -1225,23 +1563,30 @@ body {
     }
 
     .ib-solucoes-thumb img {
-        padding-top: 64px;
+        width: 602px;
+        height: 320px;
+        padding-top: 16px;
     }
 
     .ib-solucoes-thumb h3 {
-        margin-left: 336px;
+        padding-top: 32px;
+        margin-left: 304px;
+        font-size: 16px;
     }
 
     .ib-solucoes-thumb p {
-        margin-left: 336px;
+        width: 682px;
+        padding-top: 16px;
+        margin-left: 304px;
+        font-size: 16px;
     }
 
 /* Sispro */
 
     .ib-sispro-paragraph {
         width: 540px;
-        margin-top: 160px;
-        margin-left: 256px;
+        margin-top: 64px;
+        margin-left: 128px;
     }
 
     .ib-sispro-paragraph p {
@@ -1249,10 +1594,22 @@ body {
         margin-top: 0;
     }
 
+    .ib-sispro-paragraph a {
+        display: table;
+        padding-top: 24px;
+        padding-left: 164px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #2570FF;
+        cursor: pointer;
+    }
+
     .ib-section-sispro img {
-        width: 520px;
-        margin-top: 278px;
-        margin-right: 256px;
+        width: 460px;
+        margin-top: 240px;
+        margin-right: 128px;
     }
 
 /* Números */
@@ -1262,7 +1619,8 @@ body {
     }
 
     .ib-section-numeros h2 {
-        margin-left: 256px;
+        font-size: 56px;
+        margin-left: 128px;
         padding-top: 128px;
     }
 
@@ -1270,7 +1628,7 @@ body {
         float: none;
         display: inline-table;
         padding-top: 0;
-        padding-left: 384px;
+        padding-left: 128px;
         margin-top: 80px;
         margin-right: 0;
         margin-left: 0;
@@ -1282,36 +1640,68 @@ body {
         margin-right: 138px;;
     }
 
-/* Review */
-
-    .ib-review-carrousel {
-        padding-left: 4px;
+    .ib-numeros-thumb {
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+        border: none;
+        background-color: #3B7EFE;
+        margin-top: 0;
     }
 
+    .ib-numeros-thumb img {
+        width: 96px;
+        height: 96px;
+        color: #fff;
+        display: table;
+        margin-top: 34px;
+        margin-left: 16px;
+        margin-right: 0;
+        padding-top: 32px
+    }
+
+/* Review */
+
     .ib-section-review {
-        height: 90vh;
+        height: 155vh;
+    }
+
+    .ib-section-review h2 {
+        padding-top: 32px;
+    }
+
+    .ib-review-group1 {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ib-review-group2 {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .ib-review-thumb {
         display: inline-table;
         width: 320px;
-        height: 510px;
-        margin-top: 48px;
+        height: 400px;
+        margin-top: 32px;
         margin-left: 32px;
     }
 
     .ib-review-thumb p {
-        height: 224px;
+        height: 288px;
         font-size: 18px;
         text-align: center;
         display: table;
-        margin-top: 80px;
+        margin-top: 16px;
         margin-left: 16px;
         margin-right: 16px;
     }
 
     .ib-review-reviewer {
-        margin-top: 80px;
+        margin-top: 0;
     }
 
     #ib-review-foto {
@@ -1338,33 +1728,42 @@ body {
 
 /* Cases */
 
+    .ib-section-cases {
+        height: 66vh;
+        padding-top: 70px; 
+    }
+
     .ib-section-cases h3 {
         padding-top: 48px;
     }
 
 /* Contato */
 
+    #ib-section-contato {
+        padding-top: 70px; 
+    }
+
     .ib-img-contato {
-        width: 740px;
+        width: 560px;
         margin-top: 0;
         margin-left: 128px;
     }
 
     .ib-section-contato h3 {
-        padding-top: 96px;
-        margin-right: 384px;
+        padding-top: 48px;
+        margin-right: 288px;
     }
 
     .ib-form {
         width: 444px;
         float: right;
         margin-top: 32px;
-        margin-right: 224px;
+        margin-right: 128px;
     }
 
 /* Footer */
 
     .ib-section-footer {
-        height: 36vh;
+        height: 45vh;
     }
 }
